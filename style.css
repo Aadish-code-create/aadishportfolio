@@ -106,12 +106,20 @@ img { max-width: 100%; display: block; }
   margin-bottom: 8px;
 }
 
+/* Staggered left-indent gives the stack some visual rhythm instead of a flat list */
+.skill-block--2 { margin-left: 28px; margin-top: 4px; }
+.skill-block--3 { margin-left: 56px; margin-top: 4px; }
+
 .skill-icon {
-  font-family: var(--font-body);
-  font-size: 2rem;
-  width: 56px;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--color-text);
 }
+.skill-icon svg { width: 100%; height: 100%; }
 
 .skill-word {
   font-family: var(--font-display);
@@ -180,40 +188,82 @@ img { max-width: 100%; display: block; }
 /* ---------- Expertise ---------- */
 .expertise { padding: 60px 0; }
 
+.expertise-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
 .certs-row {
   display: flex;
   gap: 24px;
-  margin-bottom: 56px;
+  margin-bottom: 64px;
   flex-wrap: wrap;
 }
 
+.cert-card {
+  width: 280px;
+}
+
 .cert-img {
-  width: 260px;
+  width: 100%;
   border: 1px solid var(--color-line);
-  border-radius: 4px;
+  border-radius: 6px;
+  display: block;
+}
+
+.cert-card figcaption {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 10px;
+  line-height: 1.4;
 }
 
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-line);
 }
 
 .expertise-col h3 {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-text);
+  display: inline-block;
 }
 
 .expertise-col ul { list-style: none; }
+
 .expertise-col li {
+  position: relative;
   font-size: 0.95rem;
   color: var(--color-muted);
-  margin-bottom: 16px;
-  line-height: 1.6;
+  padding-left: 22px;
+  margin-bottom: 20px;
+  line-height: 1.65;
 }
+
+/* Small marker dot instead of a default bullet — keeps the list quiet and aligned */
+.expertise-col li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-text);
+}
+
 .expertise-col li strong { color: var(--color-text); }
 
 /* ---------- Projects ---------- */
@@ -442,7 +492,8 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .container { padding: 0 20px; }
-  .skill-icon { display: none; }
+  .skill-icon { width: 34px; height: 34px; }
+  .skill-block--2, .skill-block--3 { margin-left: 0; }
   .btn { width: 100%; text-align: center; }
   .hero-actions { flex-direction: column; }
 }
