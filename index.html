@@ -17,10 +17,14 @@
 <body>
 
   <!-- ============ HEADER ============ -->
-  <header class="site-header reveal">
-    <div class="container header-inner">
-      <span class="header-name">Aadish Kumar, Data Analyst</span>
-      <div class="header-line"></div>
+  <header class="site-header">
+    <div class="container navbar">
+      <span class="logo">Aadish Kumar</span>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -28,47 +32,42 @@
   <section class="hero" id="hero">
     <div class="container hero-grid">
       <div class="hero-text reveal">
-        <div class="skill-block skill-block--1">
-          <span class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 8c-4 0-6 2-6 6v4H8v6h4v6c0 4 2 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M30 8c4 0 6 2 6 6v4h4v6h-4v6c0 4-2 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <h1 class="skill-word">Python</h1>
+        <p class="hero-label">Data Analyst</p>
+        <h1 class="hero-heading">Turning raw data into business decisions.</h1>
+        <p class="hero-desc">I clean, model, and analyze data end to end, then translate it into evidence-backed recommendations leaders can act on.</p>
+
+        <ul class="skill-pills">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Pandas</li>
+          <li>Power BI</li>
+          <li>Excel</li>
+        </ul>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scroll-to="#projects">View Projects</button>
+          <button class="btn btn-outline" data-scroll-to="#contact">Contact Me</button>
         </div>
-        <div class="skill-block skill-block--2">
-          <span class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="24" cy="12" rx="14" ry="5" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M10 12v10c0 2.8 6.3 5 14 5s14-2.2 14-5V12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M10 22v10c0 2.8 6.3 5 14 5s14-2.2 14-5V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <h1 class="skill-word">SQL</h1>
-        </div>
-        <div class="skill-block skill-block--3">
-          <span class="skill-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="26" width="7" height="14" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="20.5" y="18" width="7" height="22" rx="1" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="33" y="8" width="7" height="32" rx="1" stroke="currentColor" stroke-width="2.5"/>
-            </svg>
-          </span>
-          <h1 class="skill-word">Business<br>Intelligence</h1>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">12K+</span>
+            <span class="stat-label">World Bank Records</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">200K+</span>
+            <span class="stat-label">HDI Observations</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
         </div>
       </div>
 
       <div class="hero-photo reveal">
         <img src="images/headshot.jpg" alt="Aadish Kumar headshot">
       </div>
-    </div>
-
-    <p class="tagline container reveal">Turning Raw Data into Answers that help in decision-making.</p>
-
-    <div class="hero-actions container reveal">
-      <button class="btn btn-primary" data-scroll-to="#projects">See my work</button>
-      <button class="btn btn-outline" data-scroll-to="#contact">Contact me</button>
     </div>
   </section>
 
@@ -84,13 +83,30 @@
         <div class="about-photo">
           <img src="images/award-photo.jpg" alt="Aadish Kumar receiving an award">
         </div>
-        <p class="about-text">
-          When the raw data is a mystery, stakeholders turn to me. As a Data Analyst, I specialize in
-          transforming complex data into clear, actionable stories: data-driven plans, charts, and advice
-          that help leaders make smart decisions. I chose to start my career in data analytics after
-          watching Michael Burry (played by Christian Bale). I promised myself I'd end up in finance,
-          specifically in the predicting business.
-        </p>
+        <div class="about-content">
+          <p class="about-text">
+            When the raw data is a mystery, stakeholders turn to me. As a Data Analyst, I specialize in
+            transforming complex data into clear, actionable stories: data-driven plans, charts, and advice
+            that help leaders make smart decisions. I chose to start my career in data analytics after
+            watching Michael Burry (played by Christian Bale). I promised myself I'd end up in finance,
+            specifically in the predicting business.
+          </p>
+
+          <div class="about-facts">
+            <div class="about-fact">
+              <h4>Education</h4>
+              <p>B.Tech, Computer &amp; Communication Engineering<br>Manipal University Jaipur, 2022–2026</p>
+            </div>
+            <div class="about-fact">
+              <h4>Focus</h4>
+              <p>Data Analyst / Business Analyst roles — fintech &amp; analytics-driven teams</p>
+            </div>
+            <div class="about-fact">
+              <h4>Goal</h4>
+              <p>Turning ambiguous business questions into clear, defensible, data-backed answers</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -115,25 +131,37 @@
         </figure>
       </div>
 
-      <div class="expertise-grid reveal">
-        <div class="expertise-col">
-          <h3>Skills</h3>
-          <ul>
-            <li><strong>SQL / Data Querying Logic</strong> — joins, subqueries, window functions, aggregations. The single most-tested skill in DA interviews and screening rounds.</li>
-            <li><strong>Excel Proficiency-Adjacent Logic</strong> — data cleaning and wrangling: handling nulls, duplicates, inconsistent formats.</li>
-            <li><strong>Statistics Fundamentals</strong> — descriptive stats, correlation vs. causation, basic hypothesis testing.</li>
-            <li><strong>Business / Domain Reasoning</strong> — translating a vague business question into a specific analytical one.</li>
-            <li><strong>Data Visualization Principles</strong> — picking the right chart, structuring a dashboard, not misleading with scale or axis choices.</li>
+      <p class="expertise-eyebrow reveal">Skills &amp; Tools</p>
+      <div class="skill-groups reveal">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Excel</li>
           </ul>
         </div>
-        <div class="expertise-col">
-          <h3>Tools</h3>
-          <ul>
-            <li><strong>SQL Client</strong> (MySQL Workbench, pgAdmin, BigQuery/Snowflake console) — for querying and joining relational data.</li>
-            <li><strong>Excel / Google Sheets</strong> — pivot tables, VLOOKUP/INDEX-MATCH, basic formulas.</li>
-            <li><strong>Python</strong> (Jupyter / pandas) — for data cleaning, EDA, and analysis beyond SQL/Excel.</li>
-            <li><strong>Power BI / Tableau</strong> — for building dashboards and visualizations.</li>
-            <li><strong>Git / GitHub</strong> — for versioning and showcasing portfolio projects.</li>
+        <div class="skill-group">
+          <h4>Visualization</h4>
+          <ul class="tag-list">
+            <li>Power BI</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <ul class="tag-list">
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>BigQuery / Snowflake</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <ul class="tag-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Jupyter</li>
           </ul>
         </div>
       </div>
@@ -151,41 +179,52 @@
       <div class="projects-grid reveal">
 
         <!-- Project 01 -->
-        <a class="project-card" href="https://github.com/Aadish-code-create/WorldBankAnalysis" target="_blank" rel="noopener">
-          <div class="project-img-wrap">
+        <div class="project-card">
+          <a class="project-img-wrap" href="https://github.com/Aadish-code-create/WorldBankAnalysis" target="_blank" rel="noopener">
             <img src="images/projects/worldbank-project.jpg" alt="GDP vs. Wellbeing project cover image">
             <div class="project-hover">
               <span class="github-icon" aria-hidden="true">&#128279;</span>
               <span>View Repository</span>
             </div>
-          </div>
+          </a>
           <div class="project-meta">
             <span class="project-number">01.</span>
             <div>
               <h3>GDP vs. Wellbeing: A World Bank–HDI Data Analysis</h3>
-              <p class="project-desc">Cleaned and integrated 12K+ World Bank records with 200K+ HDI observations, then modeled the relationship between GDP, life expectancy, and development outcomes.</p>
+              <p class="project-desc">Cleaned and modeled 12K+ World Bank records against 200K+ HDI observations to surface how GDP relates to human development outcomes.</p>
+              <ul class="tag-list tag-list--small">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Power BI</li>
+              </ul>
+              <a class="btn btn-outline btn-small" href="https://github.com/Aadish-code-create/WorldBankAnalysis" target="_blank" rel="noopener">View Repository</a>
             </div>
           </div>
-        </a>
+        </div>
 
         <!-- Project 02 -->
-        <a class="project-card" href="https://github.com/Aadish-code-create/Formula-01-Analytics" target="_blank" rel="noopener">
-          <div class="project-img-wrap">
+        <div class="project-card">
+          <a class="project-img-wrap" href="https://github.com/Aadish-code-create/Formula-01-Analytics" target="_blank" rel="noopener">
             <img src="images/projects/f1-project.jpg" alt="Formula 1 Data Analytics project cover image">
             <div class="project-hover">
               <span class="github-icon" aria-hidden="true">&#128279;</span>
               <span>View Repository</span>
             </div>
-          </div>
+          </a>
           <div class="project-meta">
             <span class="project-number">02.</span>
             <div>
               <h3>Formula 1 Data Analytics</h3>
               <!-- PLACEHOLDER: swap this line once real project details are sent -->
               <p class="project-desc">Analyzed historical F1 race and lap-time data to uncover patterns in driver and team performance across seasons.</p>
+              <ul class="tag-list tag-list--small">
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+              <a class="btn btn-outline btn-small" href="https://github.com/Aadish-code-create/Formula-01-Analytics" target="_blank" rel="noopener">View Repository</a>
             </div>
           </div>
-        </a>
+        </div>
 
       </div>
     </div>
@@ -198,7 +237,7 @@
 
       <form id="resume-form" class="resume-form">
         <input type="email" id="resume-email" name="visitor_email" placeholder="your@email.com" required>
-        <button type="submit" class="btn btn-primary">Send it to me</button>
+        <button type="submit" class="btn btn-primary btn-light">Send it to me</button>
       </form>
       <p class="form-status" id="resume-status" aria-live="polite"></p>
     </div>
@@ -237,8 +276,17 @@
   </section>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Aadish Kumar. All content and images are his own unless otherwise noted.</p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Aadish Kumar</p>
+        <p class="footer-role">Data Analyst</p>
+      </div>
+      <div class="social-links footer-social">
+        <a href="https://github.com/Aadish-code-create" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/aadish-kumar-7b8256402/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://x.com/JindalAadish" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+      </div>
+      <p class="footer-copyright">&copy; <span id="year"></span> Aadish Kumar. All content and images are his own unless otherwise noted.</p>
     </div>
   </footer>
 
